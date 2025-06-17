@@ -38,7 +38,7 @@ if( ! empty( $args->event->em_start_date ) && $ep_functions->ep_show_event_date_
         } else{?>
             <span class="ep-text-dark ep-fs-6"><?php 
                 if( $ep_functions->ep_show_event_date_time( 'em_end_date', $args->event ) || $ep_functions->ep_show_event_date_time( 'em_end_time', $args->event ) ) {
-                    esc_html_e( 'Until', 'eventprime-event-calendar-management' );?> 
+                    esc_html_e( '&#8212;', 'eventprime-event-calendar-management' );?> 
                     <span id="ep_single_event_end_date_time"><?php 
                         if( $ep_functions->ep_show_event_date_time( 'em_end_date', $args->event ) ) {
                             // echo esc_html( $args->event->fend_date );
