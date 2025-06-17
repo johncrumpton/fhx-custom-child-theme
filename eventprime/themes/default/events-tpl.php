@@ -25,7 +25,7 @@ do_action( 'ep_events_list_before_render_content', $event_data ); ?>
                         $search_filters_file = $ep_requests->eventprime_get_ep_theme('events/search/search-filters');
                         include $search_filters_file;
                         ?>
-                        <div class="ep-search-filter-overlay" style="display: none;"></div>
+                        <div class="ep-search-filter-overlay" style="display: none;"> </div>
                     </div>
                     <div class="ep-box-col-4 ep-p-3 ep-d-flex ep-align-items-center ep-justify-content-end ep-event-views-col">
                         <?php
