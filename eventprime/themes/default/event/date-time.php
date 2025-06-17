@@ -13,9 +13,7 @@ if( ! empty( $args->event->em_start_date ) && $ep_functions->ep_show_event_date_
         </span>
        <?php
         }
-        if( count( $args->event->child_events ) > 0 || ! empty( $args->event->post_parent ) ) { //if event has recurring events ?>
-            <span class="ep-recurring-modal-icon material-icons-outlined ep-bg-dark ep-text-white ep-rounded-5 ep-p-2 ep-cursor-pointer ep-text-small ep-ml-1 ep-cursor" ep-modal-open="ep-get-other-date" id="ep_event_more_child_dates">event_repeat</span><?php
-        }?>
+        ?>
     </div>
 
     <div class="ep-box-col-12 ep-text-muted ep-text-small" id="ep-sl-event-end">
@@ -34,11 +32,11 @@ if( ! empty( $args->event->em_start_date ) && $ep_functions->ep_show_event_date_
             </span>
             
         <?php if( $args->event->em_all_day == 1 ) {?>
-            <span class="ep-text-small ep-text-uppercase">
+            <span class="ep-text-dark ep-fs-6">
                 <?php esc_html_e( 'All Day', 'eventprime-event-calendar-management' );?> 
             </span><?php
         } else{?>
-            <span class="ep-text-small ep-text-uppercase"><?php 
+            <span class="ep-text-dark ep-fs-6"><?php 
                 if( $ep_functions->ep_show_event_date_time( 'em_end_date', $args->event ) || $ep_functions->ep_show_event_date_time( 'em_end_time', $args->event ) ) {
                     esc_html_e( 'Until', 'eventprime-event-calendar-management' );?> 
                     <span id="ep_single_event_end_date_time"><?php 
