@@ -418,19 +418,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
                                                         }
                                                     }?>
                                                 </div>
-                                                <div class="ep-box-col-12 ep-text-small ep-mt-2 ep-text-muted">
-                                                    <?php
-                                                    if( absint( $ticket->min_ticket_no ) > 0 ) {?>
-                                                        <div class="ep-ticket-min-qty ep-text-small ep-d-inline-flex ep-mr-3 ep-align-items-center ep-event-ticket-modal-ticket-min-quantity">
-                                                            <span class="material-icons-outlined ep-fs-6 ep-align-top ep-mr-1 ep-lh-0"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-96q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q63 0 120 19t105 54l-52 52q-37-26-81-39.5T480-792q-130 0-221 91t-91 221q0 130 91 221t221 91q130 0 221-91t91-221q0-21-3-41.5t-8-40.5l57-57q13 32 19.5 67t6.5 72q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm-55-211L264-468l52-52 110 110 387-387 51 51-439 439Z"/></svg></span> <?php esc_html_e( 'Min Qnty', 'eventprime-event-calendar-management' );?>: <?php echo absint( $ticket->min_ticket_no );?>
-                                                        </div><?php
-                                                    }
-                                                    if( absint( $ticket->max_ticket_no ) > 0 ) {?>
-                                                        <div class="ep-ticket-max-qty ep-text-small ep-d-inline-flex ep-mr-3 ep-align-items-center ep-event-ticket-modal-ticket-max-quantity">
-                                                            <span class="material-icons-outlined ep-fs-6 ep-align-top ep-mr-1 ep-lh-0"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-96q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q63 0 120 19t105 54l-52 52q-37-26-81-39.5T480-792q-130 0-221 91t-91 221q0 130 91 221t221 91q130 0 221-91t91-221q0-21-3-41.5t-8-40.5l57-57q13 32 19.5 67t6.5 72q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm-55-211L264-468l52-52 110 110 387-387 51 51-439 439Z"/></svg></span> <?php esc_html_e( 'Max Qnty', 'eventprime-event-calendar-management' );?>: <?php echo absint( $ticket->max_ticket_no );?>
-                                                        </div><?php
-                                                    }?>
-                                                </div>
+                                                
                                                 <?php
                                                 if( ! empty( $event_offers['show_ticket_offers'][$ticket->id] ) && count( $event_offers['show_ticket_offers'][$ticket->id] ) > 0 ) { ?>
                                                     <div class="ep-box-col-12 ep-mt-3 ep-mb-1 ep-text-small ep-mb-2">
