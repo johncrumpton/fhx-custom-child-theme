@@ -44,10 +44,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
                                                 }?>
                                             </h6><?php
                                         } else{?>
-                                            <h6 class="ep-fs-6 ep-fw-bold"><?php 
-                                                esc_html_e( 'Starting from', 'eventprime-event-calendar-management' );
-                                                echo ' '.esc_html( $ep_functions->ep_price_with_position( $args->event->ticket_price_range['min'] ) );?>
-                                            </h6>
+                                            
                                             <h6 class="ep-fs-6"><?php
                                                 echo esc_html( $ep_functions->ep_price_with_position ( $args->event->ticket_price_range['min'] ) . ' - ' . $ep_functions->ep_price_with_position( $args->event->ticket_price_range['max'] ) );?>
                                             </h6><?php
