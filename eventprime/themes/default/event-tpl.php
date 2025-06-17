@@ -13,11 +13,7 @@ $ep_requests = new EP_Requests;
             <!-- Event Loader -->
             <?php do_action( 'ep_add_loader_section' );?>
             <?php
-            // Load icon template
-            $icons_file_path = $ep_requests->eventprime_get_ep_theme('event/icons');
-            include $icons_file_path;
-
-            do_action( 'ep_after_single_event_icons_section', $events_data);
+            
            
             // Load result template
             $result_file_path = $ep_requests->eventprime_get_ep_theme('event/result');
