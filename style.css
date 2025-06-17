@@ -22,3 +22,11 @@
 #ep_single_event_description p {
     line-height: inherit;
 }
+
+/* Target dark buttons inside EventPrime container and override variables */
+.emagic .ep-btn-dark {
+    --ep-btn-bg: var(--primary);
+    --ep-btn-color: #fff; /* or use ACSS variable like var(--white) */
+    --ep-btn-hover-bg: var(--primary-hover, var(--primary));
+    --ep-btn-hover-color: #fff;
+}
