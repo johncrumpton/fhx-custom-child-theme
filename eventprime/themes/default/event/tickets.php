@@ -107,7 +107,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
                                     
                                     $ticket_button_style = apply_filters('ep_ticket_button_style', $ticket_button_style, $args->event);
                                     ?>
-                                    <button type="button" id="ep_single_event_ticket_now_btn" class="ep-btn ep-btn-dark ep-box-w-100 ep-mb-2 ep-py-2" ep-modal-open="ep_single_event_page_ticket_modal" <?php echo esc_attr( $ticket_button_style );?>>
+                                    <button type="button" id="ep_single_event_ticket_now_btn" class="ep-btn ep-btn-warning ep-box-w-100 ep-mb-2 ep-py-2" ep-modal-open="ep_single_event_page_ticket_modal" <?php echo esc_attr( $ticket_button_style );?>>
                                         <?php echo esc_html( $get_ticket_now_text ); ?>
                                     </button><?php
                                 }
