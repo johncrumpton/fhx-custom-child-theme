@@ -262,6 +262,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
                                 }
                             } else{?>
                                 <div class="ep-box-col-8 ep-box-col-sm-8 ep-py-3" id="ep_event_ticket_modal_left">
+                                    <h3>Select your tickets</h3>
                                     <div class="ep-event-ticket-wrap ep-box-w-100 ep-overflow-auto">
                                     <?php foreach( $all_tickets as $ticket ) {
                                        
