@@ -28,17 +28,18 @@ $ep_requests = new EP_Requests;
                 <div class="ep-box-col-8" id="ep-sl-left-area">
                     <div class="ep-box-row">
                         <?php
+                      
+                        // Load title template
+                        $title_file_path = $ep_requests->eventprime_get_ep_theme('event/title');
+                        include $title_file_path;
+
                         // Load date time template
                         $datetime_file_path = $ep_requests->eventprime_get_ep_theme('event/date-time');
                         include $datetime_file_path;
                         
-                        // Load title template
-                        $title_file_path = $ep_requests->eventprime_get_ep_theme('event/title');
-                        include $title_file_path;
-                        
                         // Load venue template
-                        $venue_file_path = $ep_requests->eventprime_get_ep_theme('event/venue');
-                        include $venue_file_path;
+                        // $venue_file_path = $ep_requests->eventprime_get_ep_theme('event/venue');
+                        // include $venue_file_path;
                         
                         // Load organizers template
                         $organizers_file_path = $ep_requests->eventprime_get_ep_theme('event/organizers');
