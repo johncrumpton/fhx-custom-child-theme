@@ -565,7 +565,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
                                             </form><?php
                                         }?>
                                         <a href="javascript:void(0);" ep-modal-close="ep_single_event_page_ticket_modal">
-                                            <button type="button" class="ep-btn ep-btn-dark ep-py-2 ep-box-w-100 ep-mt-2" id="ep_event_close_ticket_modal"><?php esc_html_e( 'Close', 'eventprime-event-calendar-management' );?></button>
+                                            <button type="button" class="ep-btn ep-btn-outline-secondary ep-py-2 ep-box-w-100 ep-mt-2" id="ep_event_close_ticket_modal"><?php esc_html_e( 'Close', 'eventprime-event-calendar-management' );?></button>
                                         </a>
                                     </div>
                                 </div><?php
