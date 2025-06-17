@@ -31,3 +31,11 @@
     --ep-btn-hover-color: #fff!important; 
     border: none!important;
 }
+
+.ep-event-list-view-action span {
+    display: inline-block
+}
+
+label {
+    color: var(text--black)!important;
+}
