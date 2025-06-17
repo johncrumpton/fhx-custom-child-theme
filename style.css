@@ -8,3 +8,14 @@
  Version:      1.1
  Text Domain:  bricks
 */
+
+/* Adjustments to eventprime */
+.ep-events .ep-box-card-item:hover .ep-box-card-thumb img.ep-event-cover {
+    transform: none!important;
+}
+.ep-events .ep-box-card-item .ep-box-card-thumb img.ep-event-cover {
+    transition: none!important;
+}
+.ep-events .ep-box-card-item .ep-box-card-thumb img.ep-event-cover {
+    transform: none!important;
+}
