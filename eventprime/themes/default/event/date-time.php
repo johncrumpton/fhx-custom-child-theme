@@ -60,7 +60,13 @@ if( ! empty( $args->event->em_start_date ) && $ep_functions->ep_show_event_date_
                         }?>
                     </span><?php
                 }?>
-            </span>
+            </span><?php
+            if( $ep_functions->ep_show_event_date_time( 'em_end_time', $args->event ) ) {?>
+                <span class="ep-text-small ep-ml-4" id="ep_single_event_start_end_diff">
+                    <?php // echo esc_html( $args->event->start_end_diff ); ?>
+                </span><?php
+            }
+        }?>
     </div>
 
     <?php 
