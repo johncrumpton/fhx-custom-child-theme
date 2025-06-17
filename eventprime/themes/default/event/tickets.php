@@ -189,29 +189,7 @@ $max_ticket_per_order = $is_able_to_purchase[0];
             }?>
         </div><?php
     }
-    // Age Group
-    if( ! empty( $args->event->event_type_details ) && ! empty( $args->event->event_type_details->em_age_group )  && empty($ep_functions->ep_get_global_settings('hide_age_group_section'))) {?>
-        <div class="ep-box-row ep-age-group-section">
-            <div class="ep-box-col-12 ep-mt-3 ep-border-left ep-border-3 ep-border-warning">
-                <div class="ep-fw-bold">
-                    <?php esc_html_e( 'Age Group', 'eventprime-event-calendar-management' );?>
-                </div>
-            </div>
-            <div class="ep-box-col-12 ep-border-left ep-border-3 ep-transparent-border"> 
-                <div class="ep-event-age-group ep-mt-1">
-                    <?php if( $args->event->event_type_details->em_age_group == 'all' ) {
-                        esc_html_e( ucfirst( $args->event->event_type_details->em_age_group ), 'eventprime-event-calendar-management' );
-                    } else if( $args->event->event_type_details->em_age_group == 'parental_guidance' ) {
-                        esc_html_e( 'All ages but parental guidance', 'eventprime-event-calendar-management' );
-                    } else if( $args->event->event_type_details->em_age_group == 'custom_group' ) {
-                        if( ! empty( $args->event->event_type_details->em_custom_group ) ) {
-                            echo esc_html( $args->event->event_type_details->em_custom_group );
-                        }
-                    }?>
-                </div>
-            </div>
-        </div><?php
-    }
+
     // Attendee Note
     if( ! empty( $args->event->em_audience_notice ) && empty( $ep_functions->ep_get_global_settings('hide_note_section') ) ) {?>
         <div class="ep-box-row ep-mt-3">
