@@ -20,7 +20,7 @@ $ep_requests = new EP_Requests;
             include $result_file_path;
             
             ?>
-            <div class="ep-box-row ep-gx-5 space-s">
+            <div class="ep-box-row ep-gx-5 spadding--s">
                 <div class="ep-box-col-8" id="ep-sl-left-area">
                     <div class="ep-box-row">
                         <?php
