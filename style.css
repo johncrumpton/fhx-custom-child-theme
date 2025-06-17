@@ -39,3 +39,7 @@
 label {
     color: var(text--black)!important;
 }
+
+.woocommerce-mini-cart-item {
+    color: black;
+}
