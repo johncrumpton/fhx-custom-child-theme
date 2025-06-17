@@ -19,3 +19,6 @@
 .ep-events .ep-box-card-item .ep-box-card-thumb img.ep-event-cover {
     transform: none!important;
 }
+#ep_single_event_description p {
+    line-height: inherit;
+}
